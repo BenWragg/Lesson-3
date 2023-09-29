@@ -1,0 +1,72 @@
+/*This is main stylesheet*::after
+/*colour scheme*::after
+dark browm #3F413C
+dark green #919266
+green #ABAB6F
+beige #FAE6CD
+white #FDF6EE
+light blue #B3E7F2
+light red #E2837D
+light green*/
+
+
+.f-white{
+color:#FDF6EE;
+}
+
+.bg-beige{
+background-color: #FAE6CD;
+padding: 100px;
+margin: 5px;
+}
+.bg-light-blue{
+background-color: #B3E7F2;
+padding: 100px;
+margin: 5px;
+}
+
+.bg-light-red{
+background-color: #E2837D;
+padding: 100px;
+margin: 5px;
+}
+
+.bg-light-green{
+background-color: #D5FFC0;
+padding: 100px;
+margin: 5px;
+}
+
+nav{
+background-color: #FFFFFF; /*background colour of your choice*/ border:1px solid #dedede; /*border around the nav menu*/ 
+color:#ffffff; /*font colour*/
+display:block;
+overflow:hidden; 
+width:100%;
+}
+
+nav ul li {
+    display:inline-block;
+    list-style-type: none;
+}
+nav ul li a {
+color: #000;
+display: block;
+line-height:56px;
+text-decoration:none;
+padding:10px;
+}
+
+nav ul li:hover{
+background-color: #FFFFFF;
+}
+nav ul li:hover a{ 
+    color:blue;
+}
+
+footer {
+background-color: #FFFFFF;
+color:#000;
+text-align: center;
+padding: 3px;
+}
