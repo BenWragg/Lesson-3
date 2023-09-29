@@ -1,13 +1,12 @@
 /*This is main stylesheet*::after
 /*colour scheme*::after
-dark browm #3F413C
-dark green #919266
-green #ABAB6F
-beige #FAE6CD
-white #FDF6EE
-light blue #B3E7F2
-light red #E2837D
-light green*/
+dark browm #3F413C rgba(63, 65, 60);
+dark green #919266 rgba(145, 146, 102);
+beige #FFE6BD rgba(255, 230, 189);
+white #FDF6EE rgba(253, 246, 238);
+blue #2A0EEB rgba(42, 14, 235);
+red #ED351C rgba(237, 53, 28);
+green #00A100 rgba(0, 161, 0); */
 
 
 .f-white{
@@ -15,24 +14,24 @@ color:#FDF6EE;
 }
 
 .bg-beige{
-background-color: #FAE6CD;
+background-color: rgba(255, 230, 189,1);
 padding: 100px;
 margin: 5px;
 }
-.bg-light-blue{
-background-color: #B3E7F2;
-padding: 100px;
-margin: 5px;
-}
-
-.bg-light-red{
-background-color: #E2837D;
+.bg-blue{
+background-color: rgba(42, 14, 235, 1);
 padding: 100px;
 margin: 5px;
 }
 
-.bg-light-green{
-background-color: #D5FFC0;
+.bg-red{
+background-color: rgba(237, 53, 28, 1);
+padding: 100px;
+margin: 5px;
+}
+
+.bg-green{
+background-color: rgba(0, 161, 0, 1);
 padding: 100px;
 margin: 5px;
 }
@@ -70,3 +69,61 @@ color:#000;
 text-align: center;
 padding: 3px;
 }
+/*style for tablet*/
+@media screen and (max-width: 992px){
+  
+  .bg-beige{
+background-color: rgba(255, 230, 189,0.5);
+padding: 100px;
+margin: 5px;
+  }
+
+  .bg-blue{
+background-color: rgba(42, 14, 235, 0.5);
+padding: 100px;
+margin: 5px;
+  }
+
+  .bg-red{
+background-color: rgba(237, 53, 28, 0.5);
+padding: 100px;
+margin: 5px;
+  }
+
+  .bg-green{
+background-color: rgba(0, 161, 0, 0.5);
+padding: 100px;
+margin: 5px;
+  }
+  
+}
+
+
+  /*style for phone*/
+  @media screen and (max-width: 600px){
+    
+  .bg-beige{
+background-color: rgba(255, 230, 189,0.1);
+padding: 100px;
+margin: 5px;
+  }
+
+  .bg-blue{
+background-color: rgba(42, 14, 235, 0.1);
+padding: 100px;
+margin: 5px;
+  }
+
+  .bg-red{
+background-color: rgba(237, 53, 28, 0.1);
+padding: 100px;
+margin: 5px;
+  }
+
+  .bg-green{
+background-color: rgba(0, 161, 0, 0.1);
+padding: 100px;
+margin: 5px;
+  }
+
+  }
