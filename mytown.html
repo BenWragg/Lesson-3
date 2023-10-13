@@ -12,6 +12,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    /*tells the browser to account for any border and padding in */
+    /*the values you specify for an element's width and height*/
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 20px;
+    }
+
+    /* Clear floats after the columns If an element is taller than the */
+    /*element containing it, and it is floated, it will overflow outside of its container.*/
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    @media screen and (max-width: 992px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
     
 		<title>My Town</title>
 		
@@ -28,20 +66,20 @@
 </div>
   
 	<body> 
-	
-<div class="bg-red"> 
 
-<h1> About Edinburgh</h1>
+  <div class="bg-red">
+    <div class="row">
+      <div class="column">
+        <h2>EDINBURGH</h2>
+        <img src="Images/edinburgh.jpg" width="700px">
+      </div>
 
-<p>Edinburgh is the capital of Scotland and it is located in central eastern Scotland, near the Firth of Forth, close to the North Sea. Thanks to its spectacular rocks, rustic buildings and a huge collection of medieval and classic architecture, including numerous stone decorations, it is often considered one of the most lively cities in Europe.</p>
-  
-</div>
-
-<div class="bg-red"> 
-
-<h1>Picture of Edinburgh</h1>
-
-<img src="Images/edinburgh.jpg" width="600px">
+      <div class="column">
+        <h2>ABOUT</h2>
+        <p>Edinburgh is the capital of Scotland and it is located in central eastern Scotland, near the Firth of Forth, close to the North Sea. Thanks to its spectacular rocks, rustic buildings and a huge collection of medieval and classic architecture, including numerous stone decorations, it is often considered one of the most lively cities in Europe.</p>
+      </div>
+    </div>
+  </div>
   
 </div>
 
@@ -59,7 +97,6 @@
 
 <a href="mailto:hege@example.com">hege@example.com</a></p> 
 </footer>
-
 	</body> 
 	
 </html> 
